@@ -4,48 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Table Structure & Attributes</h2>
-    <table border="1">
-      <caption>
-        Test
-      </caption>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-      </tr>
-      <tr>
-        <td
-        <td rowspan="3">Kumar</td>
-        <td>Kumar@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Kumar@gmail.com</td>
-      </tr>
-      <tr>
-        <td colspan="2">Kumar</td>
-      </tr>
-    </table>
+    <h1> Forms & Tables & Basic Style </h1>
+    <form action="success.html">
+       <div class="main">
 
-    <table>
-         <table cellpadding="5px" cellspacing="20px">
-        <tr>
-          <td><label for="">Name:</label></td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td><label for="">Email:</label></td>
-          <td><input type="email" /></td>
-        </tr>
-        <tr>
-          <td><label for="">Password:</label></td>
-          <td><input type="password" /></td>
-        </tr>
-        <tr>
-          <td colspan="2"><button>Submit</button></td>
-        </tr>
-    </table>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name"/><br><br>
+ 
+          <label for="email">Email:</label>
+         <input type="text" id="email" name="email"/><br><br>
+
+     <fieldset>
+
+        <legend> Gender </legend>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        
+    </fieldset>
+    </div>
+    <br>
+
+        <button type="submit">submit</button>
+       
+    </form>
 
 </body>
 </html>
