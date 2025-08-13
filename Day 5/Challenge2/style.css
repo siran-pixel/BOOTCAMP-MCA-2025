@@ -1,35 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 body {
-   border-top-style: solid;
-   border-bottom-style: solid;
-   border-top-color:#1098ad;
-   border-bottom-color:#1098ad;
-   border-top-width: 5px;
-   border-bottom-width: 5px;
-   color: #444;
-   font-size: 16px;
-   font-family: sans-serif;
-   position: relative;
-}
+  color: #444;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-Top: 5px solid #1098ad;
+  position: relative;
+  justify-content:center ;
 
-.main{
-   margin-left: 20%;
-   margin-right: 20%;
-   padding-left: 4%;
-   padding-right: 10%;
-   border-top: 3px;
-   border-color: rgb(16, 16, 16);
-   padding-bottom: 10px;
-   padding-left: -20px;
-
-}
-
-.head{
-  background-color: azure;
+  
 }
 
 .container {
   width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin: 0 auto;
 
 }
@@ -38,25 +28,45 @@ body {
   background-color: red;
   padding: 20px;
   margin-bottom: 60px;
+  /* height: 80px; */
 }
 
+
+
 nav {
-  padding-left: 250px;
-  padding-bottom: 0px;
-  text-align: center;
   font-size: 20px;
+  text-align: center;
+  float: right;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4%;
+  padding-right: 2%;
+  
 }
+
 nav a:link {
+  /* background-color: orange;
+  display: block;
+  margin: 20px;
+  padding: 15px;  */
   display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 30px;
   margin-top: 10px;
 }
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 article {
   margin-bottom: 60px;
 }
 
+
+
 .post-image {
+  /* width: 800px; */
   width: 100%;
   height: auto;
 
@@ -66,6 +76,8 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   padding: 50px 0;
   width: 500px;
 }
@@ -92,7 +104,13 @@ h2 {
   font-size: 35px;
   margin-bottom: 30px;
   position: relative;
+  margin-top: 30px;
 }
+
+/* h2::first-letter {
+  font-size: 80px;
+  position: relative;
+} */
 
 h2::after {
   content: 'TOP';
@@ -102,9 +120,10 @@ h2::after {
   padding: 5px 10px;
   position: absolute;
   top: -15px;
-  right: -40px;
+  right: -25px;
   color: #000000;
   font-size: 16px;
+  margin-top: 4px;
 }
 
 .post-header {
@@ -123,35 +142,36 @@ h4 {
   text-align: center;
 }
 
-.clear {
-  clear: both;
-}
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 5px;
-}
-.para{
-  display: inline;
-  margin-top: -5px;
-  font-size:15px;
+  margin-bottom: 15px;
+  /* padding-left: 80px; */
+    margin-left: 0px;
+  
+
+ 
 }
 
-.author {
-  float: left;
-  margin-bottom: 20px;
-}
+
+/* h3+p::first-line {
+  color: red;
+} */
+
 ul,
 ol {
   margin-left: 50px;
   margin-bottom: 20px;
+  
 }
 
 li {
+
   font-size: 20px;
   font-family: sans-serif;
   margin-bottom: 10px;
+  
 }
 
 li:last-child {
@@ -170,23 +190,24 @@ article header p {
   font-style: italic;
   font-size: 18px;
 }
-aside{
-  padding-right: 50px;
-}
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
 }
-li{
-  font-style: italic;
-  font-weight: bold;
-}
-a{
-  font-size: 20px
-}
+
 .related {
   list-style: none;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
 
 a:link {
   color: #1098ad;
@@ -214,4 +235,51 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+div{
+  margin-left: 6%;
+  margin-right: 45%;
+}
+
+.first{
+  background-color: aliceblue;
+    margin-left: 6%;
+  margin-right: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+button{
+   position: fixed;
+   right: 10%;
+}
+.two{
+  width: 750px;
+  height: auto;
+}
+.as{
+float: left;
+width: 50%;
+ position: relative;
+  left: 120%;
+  top:-1570px;
+
+}
+.as li , .img{
+ 
+  float: left;
+  gap: 3px;
+   
+}
+footer {
+  
+ 
+  display: inline;
+  margin-left: 6%;
+
+}
+
+header p{
+  display: inline-block;
 }
